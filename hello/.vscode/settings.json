@@ -5,5 +5,7 @@
     "files.associations": {
         "*.ino": "cpp"
     },
-    "particle.targetDevice": "Enviro_Monitor"
+    "particle.targetDevice": "Enviro_Monitor",
+    "particle.firmwareVersion": "1.5.2",
+    "particle.targetPlatform": "argon"
 }

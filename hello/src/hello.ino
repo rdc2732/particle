@@ -10,7 +10,7 @@ int led = D7;
 // setup() runs once, when the device is first turned on.
 void setup() {
   // Put initialization like pinMode and begin functions here.
-  Particle.publish("hello", "world");
+  Particle.publish("Testing", "Hi Elijah");
 
   pinMode(led, OUTPUT);
 }
@@ -23,7 +23,18 @@ void loop() {
   delay(100);
 
   digitalWrite(led, LOW);
+  delay(100);
+
+  digitalWrite(led, HIGH);
+  delay(100);
+
+  digitalWrite(led, LOW);
+  delay(100);
+
+  digitalWrite(led, HIGH);
+  delay(100);
+
+  digitalWrite(led, LOW);
   delay(1200);
   
-
 }
