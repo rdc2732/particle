@@ -1,0 +1,417 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200711.124019.22516.0.001.json",
+    "dumpEventTime": "2020-07-11T12:40:19Z",
+    "dumpEventTimeStamp": "1594496419763",
+    "processId": 22516,
+    "cwd": "C:\\Users\\Rick\\Documents\\dev\\particle\\oled",
+    "commandLine": [
+      "C:\\Users\\Rick\\AppData\\Local\\particle\\node-v12.16.1-windows-x64\\bin\\node.exe",
+      "-e",
+      "\n\t'use strict';\n\tvar moduleName = 'particle-cli';\n\tvar moduleVersion = '2.7.0';\n\tprocess.title = \"particle serial monitor --follow\";\n\tprocess.argv = [\"c:\\\\Users\\\\Rick\\\\.vscode\\\\extensions\\\\particle.particle-vscode-core-1.12.1\\\\src\\\\cli\\\\bin\\\\windows\\\\amd64\\\\particle.exe\",\"serial\",\"monitor\",\"--follow\"];\n\tprocess.argv.unshift('node');\n\tprocess.env.PARTICLE_DISABLE_UPDATE = 'true';\n\tprocess.env.PARTICLE_CLI_WRAPPER_VERSION = 'particle/1.1.0-12d6799 (amd64-windows) go1.14';\n\tvar logPath = \"C:\\\\Users\\\\Rick\\\\AppData\\\\Local\\\\particle\\\\error.log\";\n\tvar cwd = \"C:\\\\Users\\\\Rick\\\\Documents\\\\dev\\\\particle\\\\oled\";\n\tprocess.chdir(cwd);\n\tprocess.on('uncaughtException', function (err) {\n\t\t// ignore EPIPE errors (usually from piping to head)\n\t\tif (err.code === \"EPIPE\") return;\n\t\tconsole.error(' !   Error in ' + moduleName + ':')\n\t\tconsole.error(' !   ' + err.message || err);\n\t\tif (err.stack) {\n\t\t\tvar fs = require('fs');\n\t\t\tvar log = function (line) {\n\t\t\t\tvar d = new Date().toISOString()\n\t\t\t\t.replace(/T/, ' ')\n\t\t\t\t.replace(/-/g, '/')\n\t\t\t\t.replace(/\\..+/, '');\n\t\t\t\tfs.appendFileSync(logPath, d + ' ' + line + '\\n');\n\t\t\t}\n\t\t\tlog(err.stack);\n\t\t\tconsole.error(' !   See ' + logPath + ' for more info.');\n\t\t}\n\t\tprocess.exit(1);\n\t});\n\trequire(moduleName);"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Pentium(R) CPU G2030 @ 3.00GHz",
+        "speed": 2994,
+        "user": 19068984,
+        "nice": 0,
+        "sys": 10972671,
+        "idle": 211633140,
+        "irq": 456484
+      },
+      {
+        "model": "Intel(R) Pentium(R) CPU G2030 @ 3.00GHz",
+        "speed": 2994,
+        "user": 18553765,
+        "nice": 0,
+        "sys": 10386046,
+        "idle": 212734750,
+        "irq": 104312
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:06",
+        "address": "fe80::1135:b2bf:6f9b:4145",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:06",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Npcap Loopback Adapter",
+        "internal": false,
+        "mac": "02:00:4c:4f:4f:50",
+        "address": "fe80::892a:9364:67f9:89c1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 22
+      },
+      {
+        "name": "Npcap Loopback Adapter",
+        "internal": false,
+        "mac": "02:00:4c:4f:4f:50",
+        "address": "169.254.137.193",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "bc:85:56:35:b0:22",
+        "address": "fe80::9895:1f4c:75e6:2fc6",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 7
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "bc:85:56:35:b0:22",
+        "address": "192.168.1.158",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "home-pc"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff71d1319f9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff71d135e1c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff71d134dd8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff71d2334cb",
+      "symbol": "v8::base::CPU::has_sse+38363"
+    },
+    {
+      "pc": "0x00007ff71da49f4e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff71da32021",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff71d8fe57c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff71d906521",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3761"
+    },
+    {
+      "pc": "0x00007ff71d8fbb13",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff71d8fa184",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff71d91b36d",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff71d680c51",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff71de94ddd",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x00007ff71de69037",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+367015"
+    },
+    {
+      "pc": "0x00007ff71de445ab",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+216859"
+    },
+    {
+      "pc": "0x0000038d5caec1a0",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 17199104,
+    "totalCommittedMemory": 17199104,
+    "usedMemory": 16012368,
+    "availableMemory": 2182452896,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047456,
+        "used": 1047448,
+        "available": 8
+      },
+      "old_space": {
+        "memorySize": 11943936,
+        "committedMemory": 11943936,
+        "capacity": 11904408,
+        "used": 11636944,
+        "available": 267464
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 692224,
+        "capacity": 631648,
+        "used": 572032,
+        "available": 59616
+      },
+      "map_space": {
+        "memorySize": 1314816,
+        "committedMemory": 1314816,
+        "capacity": 1312480,
+        "used": 850320,
+        "available": 462160
+      },
+      "large_object_space": {
+        "memorySize": 1888256,
+        "committedMemory": 1888256,
+        "capacity": 1869936,
+        "used": 1869936,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2880,
+        "used": 2880,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 2.359,
+    "kernelCpuSeconds": 0.796,
+    "cpuConsumptionPercent": 0.00452109,
+    "maxRss": 62275584,
+    "pageFaults": {
+      "IORequired": 92711,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 980,
+      "writes": 7
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\Rick\\Documents\\dev\\particle\\oled",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Rick\\AppData\\Roaming",
+    "asl.log": "Destination=file",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_28012_BCXTXXJMBRHPLDMW",
+    "CHROME_RESTART": "Microsoft Edge|Microsoft Edge has stopped working. Restart it?|LEFT_TO_RIGHT",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "HOME-PC",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EDGE_METRICS_CLIENT_ID_HASH": "-3177455161558998758",
+    "EDGE_METRICS_SESSION_ID": "50",
+    "EDGE_USER_DATA_DIR": "C:\\Users\\Rick\\AppData\\Local\\Microsoft\\Edge\\User Data",
+    "EDGE_VARIATIONS_SEED_ETAG": "\"/xLzg1XJuyvLvdGMPp1XLmbax+oGzWt+zZf/SgTnaBk=\"",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Rick",
+    "LOCALAPPDATA": "C:\\Users\\Rick\\AppData\\Local",
+    "LOGONSERVER": "\\\\HOME-PC",
+    "NUMBER_OF_PROCESSORS": "2",
+    "OneDrive": "C:\\Users\\Rick\\OneDrive",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "PARTICLE_CLI_WRAPPER_VERSION": "particle/1.1.0-12d6799 (amd64-windows) go1.14",
+    "PARTICLE_DISABLE_UPDATE": "true",
+    "Path": "c:\\Users\\Rick\\.vscode\\extensions\\particle.particle-vscode-core-1.12.1\\src\\cli\\bin\\windows\\amd64;C:\\Users\\Rick\\.particle\\toolchains\\buildtools\\1.1.1\\bin;C:\\Program Files (x86)\\Microsoft\\Edge\\Application;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Git\\cmd;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\dotnet\\;C:\\Users\\Rick\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Rick\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Users\\Rick\\AppData\\Local\\Microsoft\\WindowsApps;C:\\PHP7;C:\\SQLite;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL",
+    "PORTABLE_EXECUTABLE_APP_FILENAME": "particle-installer",
+    "PORTABLE_EXECUTABLE_DIR": "C:\\Users\\Rick\\Downloads",
+    "PORTABLE_EXECUTABLE_FILE": "C:\\Users\\Rick\\Downloads\\ParticleWorkbenchInstaller (1).exe",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Users\\Rick\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SciTE_HOME": "C:\\ProgramData\\SciTE",
+    "SciTE_USERHOME": "C:\\Users\\Rick\\AppData\\Roaming\\SciTE",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Rick\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Rick\\AppData\\Local\\Temp",
+    "USERDOMAIN": "home-pc",
+    "USERDOMAIN_ROAMINGPROFILE": "home-pc",
+    "USERNAME": "Rick",
+    "USERPROFILE": "C:\\Users\\Rick",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "windir": "C:\\WINDOWS",
+    "WORKON_HOME": "C:\\Users\\Rick\\Documents\\dev\\env",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.46.1",
+    "LANG": "en_US.UTF-8",
+    "COLORTERM": "truecolor",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-7b833d4913-sock",
+    "GIT_ASKPASS": "c:\\Users\\Rick\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Rick\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\Rick\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "NODE_PATH": "C:\\Users\\Rick\\AppData\\Local\\particle\\node_modules"
+  },
+  "sharedObjects": [
+    "C:\\Users\\Rick\\AppData\\Local\\particle\\node-v12.16.1-windows-x64\\bin\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll",
+    "\\\\?\\C:\\Users\\Rick\\AppData\\Local\\particle\\node_modules\\particle-cli\\node_modules\\@serialport\\bindings\\build\\Release\\bindings.node",
+    "C:\\WINDOWS\\System32\\ole32.dll",
+    "C:\\WINDOWS\\System32\\SETUPAPI.dll",
+    "C:\\WINDOWS\\System32\\DEVOBJ.dll",
+    "C:\\WINDOWS\\System32\\WINTRUST.dll"
+  ]
+}
