@@ -7,5 +7,6 @@
     },
     "particle.targetDevice": "Enviro_Monitor",
     "particle.firmwareVersion": "1.5.2",
-    "particle.targetPlatform": "argon"
+    "particle.targetPlatform": "argon",
+    "C_Cpp.errorSquiggles": "Enabled"
 }
